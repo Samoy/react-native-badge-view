@@ -1,0 +1,3 @@
+rootProject.name = 'RNBadgeView'
+
+include ':app'
