@@ -28,4 +28,4 @@ Prop
 ScreenShot
 ---------
 >
-！[ScreenShot](https://github.com/Samoy/react-native-badge-view/blob/master/badge-view/screenShot.png)
+![ScreenShot](https://github.com/Samoy/react-native-badge-view/blob/master/badge-view/screenShot.png)
