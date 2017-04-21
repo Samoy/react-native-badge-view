@@ -12,6 +12,7 @@ RNBadgeView
 ```
 
 ###Prop
+>
 |Prop|Type|Required|Default|Comment|
 |:----:|:---:|:---:|:---:|:----:|
 |badgePosition|string|optional|right|The position of badge, one of *right* or *left*|
