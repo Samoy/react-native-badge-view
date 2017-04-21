@@ -3,7 +3,7 @@ RNBadgeView
 Installation
 ----------
 >
-`npm i react-native-badge-view`
+`npm i react-native-badge-view -S`
 
 Base Use
 -------
