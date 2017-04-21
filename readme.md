@@ -1,17 +1,17 @@
-RNBadgeView
+#RNBadgeView
 
-###Installation
+##Installation
 >
 `npm i react-native-badge-view`
 
-###Base Use
+##Base Use
 >
 ```
 <BadgeView parentView={<View style={{width: 40, height: 40, backgroundColor: 'blue'}}/>} 
            badgeText={"12"}/>
 ```
 
-###Prop
+##Prop
 >
 |Prop|Type|Required|Default|Comment|
 |:----:|:---:|:---:|:---:|:----:|
@@ -21,6 +21,3 @@ RNBadgeView
 |badgeSize|number|optional|20|The size of badge,default is *20*.|
 |badgeBackgroundColor|string|optional|red|The background color of badge, default is *red*.|
 |parentView|element|required|--|The parent view of badge, it is required.|
-
-##ScreenShot
-![截图](file:///Users/Samoy/Desktop/Simulator%20Screen%20Shot%202017%E5%B9%B44%E6%9C%8821%E6%97%A5%2010.54.06.png)
