@@ -15,7 +15,8 @@ class BadgeView extends Component {
         badgePosition: 'right',
         badgeTextColor: 'white',
         badgeBackgroundColor: 'red',
-        badgeSize: 20
+        badgeSize: 20,
+        autoSize: true
     };
 
 
@@ -26,6 +27,7 @@ class BadgeView extends Component {
         badgeSize: PropTypes.number,
         badgeBackgroundColor: PropTypes.string,
         parentView: PropTypes.element.isRequired,
+        autoSize: PropTypes.bool,
         ...View.propTypes
     };
 
@@ -37,6 +39,7 @@ class BadgeView extends Component {
 
 
     render() {
+        let flag = this.props.autoSize;
         return (
             <View style={{
                 alignItems: this.props.badgePosition === 'left' ? 'flex-start' : 'flex-end',
@@ -44,9 +47,9 @@ class BadgeView extends Component {
                 {this.props.badgeText && this.props.badgeText != 0 ?
                     <View style={{
                         backgroundColor: this.props.badgeBackgroundColor,
-                        width: this.props.badgeSize,
-                        height: this.props.badgeSize,
-                        borderRadius: this.props.badgeSize / 2,
+                        width: !flag ? this.props.badgeSize : null,
+                        height: !flag ? this.props.badgeSize : null,
+                        borderRadius: !flag ? this.props.badgeSize / 2 : 13,
                         alignItems: 'center',
                         justifyContent: 'center',
                         marginBottom: -this.props.badgeSize / 2,
@@ -57,8 +60,9 @@ class BadgeView extends Component {
                         <Text style={{
                             color: this.props.badgeTextColor,
                             textAlign: 'center',
-                            fontSize: this.props.badgeSize * 0.6,
+                            fontSize: flag ? 14 : this.props.badgeSize * 0.4,
                             fontWeight: 'bold',
+                            margin: flag ? 3 : null
                         }} numberOfLines={1}>
                             {this.props.badgeText}
                         </Text>
