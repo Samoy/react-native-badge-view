@@ -1,5 +1,7 @@
 RNBadgeView
 ===========================
+![npm](https://img.shields.io/badge/npm-v1.0.1-green.svg)
+
 Installation
 ----------
 >
