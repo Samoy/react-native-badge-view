@@ -24,9 +24,14 @@ export default class RNBadgeView extends Component {
                 <BadgeView parentView={
                     <View style={{width: 40, height: 40, backgroundColor: 'blue'}}/>
                 } badgeText={"12"}/>
-                <Text style={styles.instructions}>
-                    Double tap R on your keyboard to reload,{'\n'}
-                    Shake or press menu button for dev menu
+                <Text style={{marginBottom: 12}}>
+                    Text Badge
+                </Text>
+                <BadgeView parentView={
+                    <View style={{width: 40, height: 40, backgroundColor: 'blue'}}/>
+                } badgeImageSource={require('./badge-view/test.png')}/>
+                <Text>
+                    Image Badge
                 </Text>
             </View>
         );
