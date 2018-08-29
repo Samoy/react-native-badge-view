@@ -1,13 +1,14 @@
 /**
  * Created by Samoy on 2017/4/21.
  */
-import React, {Component, PropTypes} from 'react';
+import React, {Component} from 'react';
 import {
     View,
     StyleSheet,
     Text,
     Image
 } from 'react-native';
+import PropTypes from 'prop-types';
 
 class BadgeView extends Component {
 
